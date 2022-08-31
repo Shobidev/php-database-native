@@ -55,7 +55,7 @@ function Alert($alert, $message)
     $_SESSION['alert']      = $alert;
     $_SESSION['message']    = $message;
     
-    echo '<script>window.location.href = "index.php";</script>';
+    header("Location: index.php");
 }
 
 
